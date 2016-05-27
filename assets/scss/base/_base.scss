@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;  // шрифт, альтернативное семейство шрифтов
+    font-size: 16px;
+    line-height: 1;
+
+    min-width: 320px; // общая ширина макета, которая может расширяться ещё
+    margin: 0;
+    padding: 0;
+
+    color: #fff; // цвет шрифта
+
+    // шрифты цепляем в html через google.com/fonts под <title>. В настройках смотрим, нужен ли нам font-weight: 400 и/или 700, также добавляем при экспорте настройку cyrillic.
+    // Подключаем <link rel="stylesheet" href="css/normalize.css"> под аттачами шрифтов
+    // ^^^ там только умолчания
+}
+
+img {
+    max-width: 100%; // запрещаем картинке вылезать за границы своего блока по ширине
+    height: auto; // чтоб при этом сохранялись пропорции.
+
+    // ^^^ там только умолчания
+}
+
+.clearfix::after {
+    display: table;
+    clear: both;
+
+    content: "";
+}
+
+.wrapper {
+  min-width: 1240px;
+}
