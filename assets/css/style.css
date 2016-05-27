@@ -1,0 +1,58 @@
+/* set your base font and uncomment
+
+$base-font-size: 15px;
+
+*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* === Header layout === */
+/* === Main layout === */
+/* === Footer layout === */
+/* === Nav module === */
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInV0aWxpdGllcy9fZnVuY3Rpb25zLnNjc3MiLCJiYXNlL19yZXNldC5zY3NzIiwibGF5b3V0L19oZWFkZXIuc2NzcyIsImxheW91dC9fbWFpbi5zY3NzIiwibGF5b3V0L19mb290ZXIuc2NzcyIsIm1vZHVsZXMvX25hdi5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUtBOzs7O0VBSUU7QUNURjs7O0VBR0U7QUFjaUI7Ozs7Ozs7Ozs7Ozs7RUFDakIsVUFBVTtFQUNWLFdBQVc7RUFDWCxVQUFVO0VBQ1YsZ0JBQWdCO0VBQ2hCLGNBQWM7RUFDZCx5QkFBeUIsRUFORDs7QUFRMUIsaURBQWlEO0FBRWQ7O0VBQ2pDLGVBQWUsRUFEMkI7O0FBRzVDO0VBQ0UsZUFBZSxFQURYOztBQUdGO0VBQ0YsaUJBQWlCLEVBRFg7O0FBR0k7RUFDVixhQUFhLEVBREE7O0FBSUo7O0VBQ1QsWUFBWTtFQUNaLGNBQWMsRUFGRzs7QUFJbkI7RUFDRSwwQkFBMEI7RUFDMUIsa0JBQWtCLEVBRmI7O0FDNUNQLDJCQUEyQjtBQ0EzQix5QkFBeUI7QUNBekIsMkJBQTJCO0FDQTNCLHdCQUF3QiIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAZnVuY3Rpb24gZW0oJHRhcmdldCwgJGNvbnRleHQ6ICRiYXNlLWZvbnQtc2l6ZSkge1xyXG4gICBAaWYgJHRhcmdldCA9PSAwIHsgQHJldHVybiAwIH1cclxuICAgQHJldHVybiAkdGFyZ2V0IC8gJGNvbnRleHQgKyAwZW07XHJcbn1cclxuXHJcbi8qIHNldCB5b3VyIGJhc2UgZm9udCBhbmQgdW5jb21tZW50XHJcblxyXG4kYmFzZS1mb250LXNpemU6IDE1cHg7XHJcblxyXG4qLyIsIi8qIGh0dHA6Ly9tZXllcndlYi5jb20vZXJpYy90b29scy9jc3MvcmVzZXQvXG4gICB2Mi4wIHwgMjAxMTAxMjZcbiAgIExpY2Vuc2U6IG5vbmUgKHB1YmxpYyBkb21haW4pXG4qL1xuXG5odG1sLCBib2R5LCBkaXYsIHNwYW4sIGFwcGxldCwgb2JqZWN0LCBpZnJhbWUsXG5oMSwgaDIsIGgzLCBoNCwgaDUsIGg2LCBwLCBibG9ja3F1b3RlLCBwcmUsXG5hLCBhYmJyLCBhY3JvbnltLCBhZGRyZXNzLCBiaWcsIGNpdGUsIGNvZGUsXG5kZWwsIGRmbiwgZW0sIGltZywgaW5zLCBrYmQsIHEsIHMsIHNhbXAsXG5zbWFsbCwgc3RyaWtlLCBzdHJvbmcsIHN1Yiwgc3VwLCB0dCwgdmFyLFxuYiwgdSwgaSwgY2VudGVyLFxuZGwsIGR0LCBkZCwgb2wsIHVsLCBsaSxcbmZpZWxkc2V0LCBmb3JtLCBsYWJlbCwgbGVnZW5kLFxudGFibGUsIGNhcHRpb24sIHRib2R5LCB0Zm9vdCwgdGhlYWQsIHRyLCB0aCwgdGQsXG5hcnRpY2xlLCBhc2lkZSwgY2FudmFzLCBkZXRhaWxzLCBlbWJlZCxcbmZpZ3VyZSwgZmlnY2FwdGlvbiwgZm9vdGVyLCBoZWFkZXIsIGhncm91cCxcbm1lbnUsIG5hdiwgb3V0cHV0LCBydWJ5LCBzZWN0aW9uLCBzdW1tYXJ5LFxudGltZSwgbWFyaywgYXVkaW8sIHZpZGVvIHtcbiAgbWFyZ2luOiAwO1xuICBwYWRkaW5nOiAwO1xuICBib3JkZXI6IDA7XG4gIGZvbnQtc2l6ZTogMTAwJTtcbiAgZm9udDogaW5oZXJpdDtcbiAgdmVydGljYWwtYWxpZ246IGJhc2VsaW5lO1xufVxuLyogSFRNTDUgZGlzcGxheS1yb2xlIHJlc2V0IGZvciBvbGRlciBicm93c2VycyAqL1xuYXJ0aWNsZSwgYXNpZGUsIGRldGFpbHMsIGZpZ2NhcHRpb24sIGZpZ3VyZSxcbmZvb3RlciwgaGVhZGVyLCBoZ3JvdXAsIG1lbnUsIG5hdiwgc2VjdGlvbiB7XG4gIGRpc3BsYXk6IGJsb2NrO1xufVxuYm9keSB7XG4gIGxpbmUtaGVpZ2h0OiAxO1xufVxub2wsIHVsIHtcbiAgbGlzdC1zdHlsZTogbm9uZTtcbn1cbmJsb2NrcXVvdGUsIHEge1xuICBxdW90ZXM6IG5vbmU7XG59XG5ibG9ja3F1b3RlOmJlZm9yZSwgYmxvY2txdW90ZTphZnRlcixcbnE6YmVmb3JlLCBxOmFmdGVyIHtcbiAgY29udGVudDogJyc7XG4gIGNvbnRlbnQ6IG5vbmU7XG59XG50YWJsZSB7XG4gIGJvcmRlci1jb2xsYXBzZTogY29sbGFwc2U7XG4gIGJvcmRlci1zcGFjaW5nOiAwO1xufSIsIi8qID09PSBIZWFkZXIgbGF5b3V0ID09PSAqLyIsIi8qID09PSBNYWluIGxheW91dCA9PT0gKi8iLCIvKiA9PT0gRm9vdGVyIGxheW91dCA9PT0gKi8iLCIvKiA9PT0gTmF2IG1vZHVsZSA9PT0gKi8iXSwic291cmNlUm9vdCI6Ii9zb3VyY2UvIn0= */

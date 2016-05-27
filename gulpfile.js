@@ -35,7 +35,7 @@ gulp.task('connect', function() {
 });
 
 gulp.task('sass', function () {
-  gulp.src('dev/scss/*.scss')
+  gulp.src('assets/scss/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
@@ -49,11 +49,11 @@ gulp.task('sass', function () {
       remove: false
       }))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('dev/css/'));
+    .pipe(gulp.dest('assets/css/'));
 });
 
 gulp.task('minifycss', function () {
-  gulp.src('dev/css/style.css')
+  gulp.src('assets/css/style.css')
       .pipe(changed('prod/css'))
     // .pipe(rename({suffix:'.min'}))
     // .pipe(minifycss())
@@ -63,13 +63,13 @@ gulp.task('minifycss', function () {
 
 gulp.task('javascript', function() {
     gulp.src([
-      'dev/js/**/*.js'
+      'assets/js/**/*.js'
     ])
     .pipe(changed('prod/js/'))
-    // .pipe(sourcemaps.init())
-    // .pipe(concat('all.js'))
-    // .pipe(rename({suffix:'.min'}))
-    // .pipe(uglify())
+    .pipe(sourcemaps.init())
+    .pipe(concat('all.js'))
+    .pipe(rename({suffix:'.min'}))
+    .pipe(uglify())
     .on('error', errorLog)
     // .pipe(sourcemaps.write())
     .pipe(gulp.dest('prod/js/'))
@@ -80,17 +80,17 @@ gulp.task('javascript', function() {
 });
 
 gulp.task('html', function() {
-  gulp.src('dev/*.html')
+  gulp.src('assets/*.html')
     .pipe(changed('prod/'))
     .pipe(gulp.dest('prod/'))
     .pipe(connect.reload());
 });
 
 gulp.task('watch', function () {
-  gulp.watch('dev/scss/**/*.scss', ['sass']);
-  gulp.watch('dev/css/*.css', ['minifycss']);
-  gulp.watch('dev/js/**/*.js', ['javascript']);
-  gulp.watch('dev/*.html', ['html']);
+  gulp.watch('assets/scss/**/*.scss', ['sass']);
+  gulp.watch('assets/css/*.css', ['minifycss']);
+  gulp.watch('assets/js/**/*.js', ['javascript']);
+  gulp.watch('assets/*.html', ['html']);
 
 });
 
