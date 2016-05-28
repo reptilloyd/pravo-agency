@@ -10,3 +10,60 @@
     background-color: limegreen;
   }
 }
+
+
+.top-nav {
+
+  @include clearfix;
+
+  margin-top: 45px;
+
+  & .logo {
+    float: left;
+    margin-right: 450px;
+
+    width: 100px;
+    height: 50px;
+    outline: 2px solid gray;
+    outline-offset: -2px;
+  }
+
+  & .lang {
+    float: right;
+  }
+}
+
+.main-nav {
+
+  float: left;
+  & ul {}
+  & li {}
+  & > .link {}
+}
+
+.slider {
+  margin-bottom: 45px;
+
+  &-item {
+    @include clearfix;
+  }
+  & .slogan {
+    max-width: 540px;
+    float: left;
+
+    outline: 2px solid crimson;
+    outline-offset: -2px;
+
+    & h1 {}
+    & p {}
+  }
+
+  &-img {
+    float: right;
+    width: 540px;
+    height: 570px;
+
+    outline: 2px solid darksalmon;
+    outline-offset: -2px;
+  }
+}

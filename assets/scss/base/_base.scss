@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    font-family: "Open Sans", sans-serif;  // шрифт, альтернативное семейство шрифтов
+    font-family: "Open Sans", sans-serif;
     font-size: 16px;
     line-height: 1;
 
@@ -16,7 +16,7 @@ body {
     margin: 0;
     padding: 0;
 
-    color: #fff; // цвет шрифта
+    color: #000; // цвет шрифта
 
     // шрифты цепляем в html через google.com/fonts под <title>. В настройках смотрим, нужен ли нам font-weight: 400 и/или 700, также добавляем при экспорте настройку cyrillic.
     // Подключаем <link rel="stylesheet" href="css/normalize.css"> под аттачами шрифтов
@@ -39,4 +39,12 @@ img {
 
 .wrapper {
   min-width: 1240px;
+}
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
