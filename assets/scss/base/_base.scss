@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "GothamPro", sans-serif;
     font-size: 16px;
     line-height: 1;
 
@@ -16,7 +16,7 @@ body {
     margin: 0;
     padding: 0;
 
-    color: #000; // цвет шрифта
+    color: #414252; // цвет шрифта
 
     // шрифты цепляем в html через google.com/fonts под <title>. В настройках смотрим, нужен ли нам font-weight: 400 и/или 700, также добавляем при экспорте настройку cyrillic.
     // Подключаем <link rel="stylesheet" href="css/normalize.css"> под аттачами шрифтов
@@ -24,8 +24,8 @@ body {
 }
 
 img {
-    max-width: 100%; // запрещаем картинке вылезать за границы своего блока по ширине
-    height: auto; // чтоб при этом сохранялись пропорции.
+    // max-width: 100%; // запрещаем картинке вылезать за границы своего блока по ширине
+    // height: auto; // чтоб при этом сохранялись пропорции.
 
     // ^^^ там только умолчания
 }
@@ -39,6 +39,7 @@ img {
 
 .wrapper {
   min-width: 1240px;
+  overflow: hidden;
 }
 
 @mixin clearfix {

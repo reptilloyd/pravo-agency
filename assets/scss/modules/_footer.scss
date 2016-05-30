@@ -2,39 +2,120 @@
 
 .footer {
 
+  color: #3f4147;
+  border-top: 1px solid #f0f0f0;
   text-align: center;
+  padding-bottom: 28px;
+  padding-top: 26px;
 
-  outline: 2px solid skyblue;
-  outline-offset: -2px;
+  // outline: 2px solid skyblue;
+  // outline-offset: -2px;
   & > .wrap {
     width: 340px;
     max-width: 1240px;
     margin: 0 auto;
+    padding-left: 4px;
   }
-  &-title {}
+  &-title {
+    font-size: 11px;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-family: "GothamPro-Black", sans-serif;
+    margin-bottom: 13px;
+  }
 }
 
 .contacts {
 
+  margin-bottom: 18px;
+
   & > .item {
+
+    font-size: 18px;
+    line-height: 30px;
+    font-family: "GothamPro", sans-serif;
 
     &-address {}
     &-phone {}
-    &-email {}
+    &-email {
+      color: #a70c5d;
+      text-decoration: none;
+    }
   }
 }
 
 .socials {
-  font-size: 0;
+  // font-size: 0;
+  // padding-left: 10px;
+  margin: 0 auto;
+  width: 147px;
+  margin-bottom: 28px;
+  @include clearfix;
+
   & > .item {
 
-    display: inline-block;
-    vertical-align: top;
-    font-size: 16px;
+    display: block;
+    float: left;
+    // vertical-align: top;
+    // font-size: 16px;
+
+    width: 41px;
+    height: 40px;
+    border: 2px solid #dbdbdb;
+    border-radius: 50%;
+    position: relative;
+    transition: .3s linear;
+
+    margin-right: 8px;
+
+    &:hover {
+      border: 2px solid #4a6bb8;
+      & .icon-socials {
+        fill: #4a6bb8;
+      }
+    }
+    &:first-child {
+      margin-left: 6px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+
+    & .icon-socials {
+      position: absolute;
+      fill: #dbdbdb;
+      transition: .3s linear;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      left: 50%;
+
+      &.fb {
+        width: 5px;
+        height: 12px;
+      }
+      &.tw {
+        width: 15px;
+        height: 11px;
+      }
+      &.in {
+        width: 12px;
+        height: 13px;
+      }
+    }
+
     &-fb {}
     &-tw {}
     &-in {}
   }
 }
 
-.copyright {}
+.copyright {
+
+  font-size: 12px;
+  line-height: 16px;
+
+  & span {
+    font-family: "GothamPro-Bold", sans-serif;
+    font-weight: 700;
+  }
+}
