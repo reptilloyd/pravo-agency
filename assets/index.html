@@ -102,9 +102,10 @@
                 </div>
                 <div class="services-item  services-item-optimization">
                   <h3>Оптимизация договорных&nbsp;отношений</h3>
-                  <svg class="icon-services  target">
+                  <svg class="icon-services  target" data-popup-open="modal">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon_services_02.svg#general"></use>
                   </svg>
+                  <div class="modal-caption">Иконка кликабельна</div>
                   <a href="#" class="info"></a>
                   <ul>
                     <li>Доработка, латание дыр и улучшение условий основных типовых договоров вашей компании</li>
@@ -134,7 +135,7 @@
                   <p>К сожалению, конфликты бывают в любой сфере. Если дело близится к суду или уже дошло до него,&nbsp;мы&nbsp;поможем отстоять ваши&nbsp;права&nbsp;и интересы.</p>
                 </div>
 
-                <div class="modal">
+                <div class="modal" data-popup="modal">
                   <div class="modal-content">
                     <div class="modal-content-left">
                       <div class="vendor-title  service">Услуга</div>
@@ -365,6 +366,7 @@
       </div><!-- .footer -->
 
 
+      <div class="modal-overlay" data-popup="modal" data-popup-close="modal"></div>
 
 
 
@@ -375,7 +377,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
-    <script src="js/script.js"></script>
+    <script src="js/all.min.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
