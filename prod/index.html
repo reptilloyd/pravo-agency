@@ -270,10 +270,11 @@
           </div>
           <form action="#" class="request-form" method="post">
             <div class="request-content">
+
               <div class="request-content-left">
-                <input type="text" name="request-name" placeholder="Имя*" required>
-                <input type="tel" name="request-phone" placeholder="Телефон*" required>
-                <input type="email" name="request-email" placeholder="e-mail*" required>
+                <input id="nameInput" type="text" name="request-name" placeholder="Имя*" required>
+                <input id="telInput" type="tel" name="request-phone" placeholder="Телефон*" required>
+                <input id="emailInput" type="email" name="request-email" placeholder="e-mail*" required>
                 <input type="text" name="request-site" placeholder="Сайт">
 
                 <div class="turn">
@@ -325,7 +326,7 @@
               </div>
             </div>
 
-            <button class="btn  btn-form" type="submit">Отправить</button>
+            <button class="btn  btn-form  submit" type="submit">Отправить</button>
           </form>
         </div>
       </div><!-- .request -->

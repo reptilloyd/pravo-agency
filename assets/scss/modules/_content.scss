@@ -861,3 +861,9 @@
     opacity: 1;
   }
 }
+
+
+.request-form .error {
+  border-bottom: 1px solid red;
+  transition: .3s linear;
+}

@@ -23,5 +23,45 @@ $(function() {
       }
       e.stopPropagation();
     });
-
 });
+
+
+
+
+$('.request-form').submit(function(e){
+e.preventDefault();
+  var name = $('.request-form [name=request-name]');
+  var phone = $('.request-form [name=request-phone]');
+  var email = $('.request-form [name=request-email]');
+
+    if (name.val() === '') {
+        name.addClass('error');
+        return false;
+    } else if (!validateEmail(email.val())) {
+        email.addClass('error');
+        return false;
+    } else if (phone.val() === '') {
+        phone.addClass('error');
+        return false;
+    } else {
+      return true;
+    }
+
+    function validateEmail(email) {
+      var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(email);
+    }
+});
+
+//----- "instant"-check
+$('.request-form input[type="email"]').blur(function() {
+  if(!validateEmail($(this).val())){
+    $(this).addClass('error');
+  } else {
+    $(this).removeClass('error');
+  }
+});
+function validateEmail(email) {
+  var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(email);
+}
