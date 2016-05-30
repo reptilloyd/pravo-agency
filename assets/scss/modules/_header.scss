@@ -18,7 +18,7 @@
 
     & .logo {
         float: left;
-        margin-right: 472px;
+        margin-right: 471px;
         margin-left: -2px;
 
         &-icon {
@@ -73,6 +73,7 @@
 
     & ul {
         font-size: 0;
+        @include list;
     }
 
     & li {
@@ -132,7 +133,7 @@
     & .slogan {
         float: left;
         max-width: 480px;
-        margin-top: 76px;
+        margin-top: 56px;
 
         & h1 {
             font-family: $dpbo;
@@ -199,7 +200,7 @@
 
     &-header {
         padding-left: 24px;
-        
+
         &-arrow {
             position: absolute;
             top: 50%;

@@ -23,3 +23,17 @@ $dpbo	:	"GothamPro-Bold", Arial, Helvetica, sans-serif;
   font-size: $size;
   font-size: calculateRem($size);
 }
+
+
+
+@mixin list {
+    font-size: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    > li {
+        display: inline-block;
+        vertical-align: top;
+    }
+}

@@ -1,7 +1,7 @@
 /* === Content module === */
 
 .heading {
-    padding-top: 25px;
+    padding-top: 2px;
     padding-right: 250px;
     padding-bottom: 30px;
     padding-left: 254px;
@@ -52,6 +52,7 @@
         right: 0;
         left: 0;
         width: 100vw;
+        min-width: 100%;
         height: 1px;
         content: "";
         background-color: #f4f4f4;
@@ -69,7 +70,7 @@
 
     &-content {
         position: relative;
-        padding-top: 66px;
+        padding-top: 37px;
         @include clearfix;
     }
 
@@ -82,7 +83,7 @@
 
         &:nth-child(2) {
             position: relative;
-            margin-bottom: 60px;
+            margin-bottom: 45px;
 
             &::after {
                 position: absolute;
@@ -119,7 +120,7 @@
 
         & .icon-services {
             position: absolute;
-            top: -7px;
+            top: 8px;
             left: 60px;
             width: 40px;
             height: 41px;
@@ -163,7 +164,7 @@
             @include font-size(16px)
             line-height: 20px;
             position: absolute;
-            top: 4px;
+            top: 19px;
             right: 24px;
             width: 30px;
             height: 30px;
@@ -189,9 +190,12 @@
             @include font-size(13px)
             line-height: 20px;
             color: #414252;
+            margin: 0;
         }
 
         & ul {
+
+            @include list;
 
             & li {
                 font-family: $gp;
@@ -268,6 +272,7 @@
         right: 0;
         left: 0;
         width: 100vw;
+        min-width: 100%;
         height: 1px;
         content: "";
         background-color: #f4f4f4;
@@ -280,8 +285,8 @@
     }
 
     & .heading {
-        margin-bottom: 78px;
-        padding-top: 57px;
+        margin-bottom: 46px;
+        padding-top: 33px;
     }
 
     &-content {
@@ -340,6 +345,7 @@
 
                 &::before {
                     font-family: "PFDinDisplayPro-Regular", sans-serif;
+                    font-style: normal;
                     @include font-size(60px)
                     font-weight: 100;
                     line-height: 25px;
@@ -441,7 +447,7 @@
                 position: relative;
                 width: 303px;
                 height: 198px;
-                margin-top: 6px;
+                margin-top: 23px;
                 margin-bottom: 18px;
                 background: #e5e5e5 url("../img/feedback.jpg") no-repeat left -63px top -25px;
 
@@ -488,11 +494,12 @@
                         letter-spacing: 0;
                         background-color: #c9cacf;
                         mask: url("../img/icon_youtube.svg") no-repeat 50% 50%;
+                        background: url("../img/icon_youtube.svg") no-repeat 50% 50%;
                     }
                 }
             }
         }
-        
+
         &:last-child {
             width: 303px;
             margin-right: 0;
@@ -500,6 +507,8 @@
     }
 
     & .reload {
+        display: block;
+        text-decoration: none;
         font-family: $gpbl;
         @include font-size(11px)
         font-weight: 700;
@@ -535,6 +544,7 @@
         right: 0;
         left: 0;
         width: 100vw;
+        min-width: 100%;
         height: 1px;
         content: "";
         background-color: #f4f4f4;
@@ -548,7 +558,7 @@
 
     & .heading {
         margin-bottom: 7px;
-        padding-top: 57px;
+        padding-top: 33px;
     }
 
     &-form {
@@ -591,17 +601,17 @@
                 color: $mako;
                 border: none;
                 border-bottom: 1px solid #dcdcdc;
+                background-color: #fff;
                 outline: none;
 
-                &:hover {
+                &::placeholder {
                     font-family: $gpm;
                     @include font-size(11px)
-                    font-weight: 700;
+                    font-weight: 400;
                     line-height: 20px;
                     color: $mako;
                 }
-
-                &::placeholder {
+                &::-moz-placeholder {
                     font-family: $gpm;
                     @include font-size(11px)
                     font-weight: 400;
@@ -644,7 +654,7 @@
         &-arrow {
             position: absolute;
             top: 50%;
-            right: 14px;
+            right: 17px;
             width: 22px;
             height: 22px;
             transform: translateY(-50%) rotate(180deg);
@@ -694,6 +704,7 @@
             text-overflow: ellipsis;
             color: $mako;
             border: 1px solid #dcdcdc;
+            background-color: #fff;
             outline: none;
 
             &:hover {
@@ -706,6 +717,10 @@
         padding-right: 10px;
         padding-bottom: 13px;
         padding-left: 10px;
+
+        ul {
+          @include list;
+        }
 
         & label {
             font-family: $gp;
@@ -743,7 +758,7 @@
     display: none;
     padding-top: 95px;
     padding-right: 32px;
-    padding-bottom: 45px;
+    padding-bottom: 55px;
     padding-left: 7px;
     color: $mako;
     background: #fff;
