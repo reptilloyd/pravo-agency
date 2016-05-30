@@ -1,1 +1,25 @@
 /* === Variables module === */
+
+$claret         : rgba(167, 12, 93, 1);
+$freshEggplant  : rgba(151, 0, 72, 1);
+$mako           : rgba(63, 65, 71, 1);
+$iron           : rgba(223, 223, 226, 1);
+
+
+
+$gp 	:	"GothamPro", Arial, Helvetica, sans-serif;
+$gpm	:	"GothamPro-Medium", Arial, Helvetica, sans-serif;
+$gpbl	:	"GothamPro-Black", Arial, Helvetica, sans-serif;
+$dpbo	:	"GothamPro-Bold", Arial, Helvetica, sans-serif;
+
+
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
