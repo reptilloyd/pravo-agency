@@ -492,10 +492,7 @@
                         transition: .3s linear;
                         transform: none;
                         letter-spacing: 0;
-                        background-color: #c9cacf;
-                        mask: url("../img/icon_youtube.svg") no-repeat 50% 50%;
-                        background: url("../img/FALLBACK.png") no-repeat 50% 50%;
-                        background: url("../img/icon_youtube.svg") no-repeat 50% 50%;
+                        background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJnZW5lcmFsIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDEyLjggMTIuOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTIuOCAxMi44IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGZpbGw9IiNjOWNhY2YiIGQ9Ik02LjQsMEMyLjksMCwwLDIuOSwwLDYuNGMwLDMuNSwyLjksNi40LDYuNCw2LjRjMy41LDAsNi40LTIuOSw2LjQtNi40QzEyLjgsMi45LDkuOSwwLDYuNCwwTDYuNCwweiBNMTAuMyw3LjgNCgkJYzAsMC41LTAuNCwxLjItMSwxLjNjLTEuOCwwLjEtNCwwLjEtNS44LDBjLTAuNi0wLjEtMS0wLjgtMS0xLjNDMi40LDYuNywyLjQsNi4xLDIuNSw1YzAtMC41LDAuNC0xLjIsMS0xLjNjMS45LTAuMiw0LTAuMSw1LjgsMA0KCQljMC42LDAsMSwwLjcsMSwxLjJDMTAuNCw2LDEwLjQsNi43LDEwLjMsNy44TDEwLjMsNy44eiBNMTAuMyw3LjgiLz4NCgk8cGF0aCBmaWxsPSIjYzljYWNmIiBkPSJNNS42LDhMOCw2LjRMNS42LDQuOFY4eiBNNS42LDgiLz4NCjwvZz4NCjwvc3ZnPg0K);
                     }
                 }
             }

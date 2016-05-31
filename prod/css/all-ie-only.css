@@ -1,0 +1,33 @@
+  .icon-socials { transition: 0 !important; }
+
+  .icon-socials.fb { background: url('../img/sprite.png') 0 -228px; }
+  .socials .item:hover .icon-socials.fb { background-position: 0 -206px; }
+
+  .icon-socials.tw { background: url('../img/sprite.png') 0 -139px; }
+  .socials .item:hover .icon-socials.tw { background-position: 0 -118px; }
+
+  .icon-socials.in { background: url('../img/sprite.png') 0 -183px; }
+  .socials .item:hover .icon-socials.in { background-position: 0 -160px; }
+
+  .logo-icon { background: url('../img/logo.png') 0 0; }
+
+  .playback-arrow { background: url('../img/sprite.png') 0 -52px; }
+
+  .play-feedbacks { background: url('../img/sprite.png') 0 -30px; }
+
+  .reload-icon { background: url('../img/sprite.png') no-repeat 0 0;  }
+
+  .btn-header-arrow { background: url('../img/sprite.png') no-repeat 0 -690px;  }
+
+  .turn-title-arrow { background: url('../img/sprite.png') no-repeat 0 -658px;  }
+
+
+  .icon-services { transition: 0 !important; }
+  .services-01 { background: url('../img/sprite.png') no-repeat 0 -607px;  }
+  .services-01:hover { background: url('../img/sprite.png') no-repeat 0 -556px;  }
+  .services-02 { background: url('../img/sprite.png') no-repeat 0 -505px; width: 42px !important; height: 42px !important;}
+  .services-02:hover { background: url('../img/sprite.png') no-repeat 0 -453px;  }
+  .services-03 { background: url('../img/sprite.png') no-repeat 0 -403px;  }
+  .services-03:hover { background: url('../img/sprite.png') no-repeat 0 -354px;  }
+  .services-04 { background: url('../img/sprite.png') no-repeat 0 -302px; width: 42px !important;}
+  .services-04:hover { background: url('../img/sprite.png') no-repeat 0 -250px;  }
