@@ -48,6 +48,13 @@
             border: 2px solid $iron;
             border-radius: 30px;
 
+            &:hover {
+
+              &::before {
+                background-color: $mako;
+              }
+            }
+
             &::before {
                 position: absolute;
                 top: 50%;
@@ -58,6 +65,7 @@
                 transform: translateY(-50%);
                 border-radius: 50%;
                 background-color: $iron;
+                transition: .3s ease-out;
             }
         }
     }
@@ -86,13 +94,36 @@
             margin-right: 30px;
             text-decoration: none;
             color: $mako;
+            overflow: hidden;
 
             &:hover {
                 color: $claret;
+
+                &::before {
+                  left: 0;
+                  bottom: -5px;
+                  width: 100%;
+                  opacity: 1;
+                }
             }
 
             &.active {
                 color: $claret;
+
+                &::before {
+                  display: none;
+                }
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              width: 0;
+              height: 2px;
+              bottom: 0px;
+              background-color: $claret;
+              opacity: 0;
+              transition: all .3s;
+              left: 50%;
             }
         }
     }
@@ -197,6 +228,57 @@
     border-radius: 30px;
     outline: none;
     background-color: $claret;
+    transition: .3s ease-out;
+    z-index: 5;
+    border: 3px solid $claret;
+
+
+    &::after {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      visibility: hidden;
+      opacity: 0;
+      border-radius: 50px;
+      transition: background-color .3s,box-shadow .3s;
+      animation-name: e;
+      animation-duration: .65s;
+      border: 3px solid #fff;
+    }
+
+    &:hover {
+      box-shadow: 0 10px 20px 5px rgba(0,0,0,.15);
+      border: 3px solid white;
+      background-color: #fff;
+      color: $claret;
+
+      &::after {
+        animation-name: btn-hover;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+      }
+
+      & .btn-header-arrow {
+        stroke: $claret;
+        animation-name: rotate;
+        animation-duration: .3s;
+        animation-timing-function: linear;
+      }
+
+    }
+    &:active {
+      border: 3px solid rgba(40,54,69,.1);
+      color: rgba(63, 65, 71, .8);
+      box-shadow: 0 10px 20px 0 rgba(0,0,0,.15);
+
+      & .btn-header-arrow {
+        stroke: rgba(63, 65, 71, .8);
+      }
+    }
 
     &-header {
         padding-left: 24px;
@@ -208,6 +290,7 @@
             width: 22px;
             height: 22px;
             transform: translateY(-50%);
+            transition: .3s ease-in-out;
             fill: none;
             stroke: #fff;
             stroke-width: 3px;
@@ -219,4 +302,23 @@
         padding-top: 9px;
         padding-bottom: 7px;
     }
+}
+
+@keyframes btn-hover {
+    0% {
+        transform: scale(.85) perspective(400px) rotateX(10deg)
+    }
+    0%,
+    to {
+        visibility: visible;
+        opacity: 1
+    }
+    to {
+        transform: scale(1) perspective(400px) rotateX(0deg)
+    }
+}
+
+@keyframes rotate {
+  from { transform: translateY(-50%) rotate(0deg);}
+  to   { transform: translateY(-50%) rotate(360deg);}
 }

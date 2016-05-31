@@ -46,6 +46,12 @@
         &-email {
             text-decoration: none;
             color: $claret;
+            transition: all .3s ease-out;
+
+            &:hover {
+              text-decoration: underline;
+              color: $mako;
+            }
         }
     }
 }
@@ -142,6 +148,8 @@
   .reload-icon { background: url('../img/sprite.png') no-repeat 0 0;  }
 
   .btn-header-arrow { background: url('../img/sprite.png') no-repeat 0 -690px;  }
+  .btn:hover { background: #ccc; }
+  .btn .btn-header-arrow:hover { background: url('../img/sprite.png') no-repeat 0 -722px !important; }
 
   .turn-title-arrow { background: url('../img/sprite.png') no-repeat 0 -658px;  }
 
@@ -155,6 +163,25 @@
   .services-03:hover { background: url('../img/sprite.png') no-repeat 0 -354px;  }
   .services-04 { background: url('../img/sprite.png') no-repeat 0 -302px; width: 42px !important;}
   .services-04:hover { background: url('../img/sprite.png') no-repeat 0 -250px;  }
+
+  .main-nav .link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    bottom: 0px;
+    background-color: $claret;
+    opacity: 0;
+    transition: 0 !important;
+  }
+
+  .main-nav .link:hover::before {
+    bottom: -5px;
+    width: 100%;
+    opacity: 1;
+  }
   /* eof IE10 */
 
   /* IE11 */
@@ -178,6 +205,7 @@
   *::-ms-backdrop, .reload-icon { background: url('../img/sprite.png') no-repeat 0 0;  }
 
   *::-ms-backdrop, .btn-header-arrow { background: url('../img/sprite.png') no-repeat 0 -690px;  }
+  *::-ms-backdrop, .btn:hover { background: #ccc; }
 
   *::-ms-backdrop, .turn-title-arrow { background: url('../img/sprite.png') no-repeat 0 -658px;  }
 
@@ -191,5 +219,24 @@
   *::-ms-backdrop, .services-03:hover { background: url('../img/sprite.png') no-repeat 0 -354px;  }
   *::-ms-backdrop, .services-04 { background: url('../img/sprite.png') no-repeat 0 -302px; width: 42px !important;}
   *::-ms-backdrop, .services-04:hover { background: url('../img/sprite.png') no-repeat 0 -250px;  }
+
+  *::-ms-backdrop, .main-nav .link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    bottom: 0px;
+    background-color: $claret;
+    opacity: 0;
+    transition: 0 !important;
+  }
+
+  *::-ms-backdrop, .main-nav .link:hover::before {
+    bottom: -5px;
+    width: 100%;
+    opacity: 1;
+  }
   /* eof IE11 */
 }

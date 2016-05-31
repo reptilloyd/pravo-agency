@@ -30,6 +30,29 @@
         }
     }
 
+    & h3 {
+        font-family: $dpbo;
+        @include font-size(28px)
+        font-weight: 700;
+        line-height: 30px;
+        position: relative;
+        margin-bottom: 29px;
+        text-transform: uppercase;
+        color: $mako;
+
+        &::after {
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            width: 40px;
+            height: 2px;
+            content: "";
+            transform: translateX(-50%);
+            background-color: $claret;
+            background-color: $claret;
+        }
+    }
+
     & p {
         @include font-size(15px)
         line-height: 20px;
@@ -128,16 +151,6 @@
             transition: .3s linear;
             stroke: #a5a6ac;
 
-            &.target {
-                fill: #a5a6ac;
-                stroke: none;
-
-                &:hover {
-                    fill: $claret;
-                    stroke: none;
-                }
-            }
-
             &:hover {
                 stroke: $claret;
             }
@@ -145,6 +158,27 @@
             &:hover ~ .info {
                 color: #fff;
                 background-color: $claret;
+            }
+        }
+
+        & .target {
+            position: absolute;
+            top: 8px;
+            left: 77px;
+            width: 40px;
+            height: 41px;
+
+            & .services-02 {
+              fill: #a5a6ac;
+              stroke: none;
+            }
+
+            &:hover {
+
+                & .services-02 {
+                  fill: $claret;
+                  stroke: none;
+                }
             }
         }
 
@@ -231,7 +265,8 @@
             padding-left: 144px;
 
             & .icon-services {
-                left: 77px;
+                top: 0px;
+                left: 0px;
             }
 
             & .info {
@@ -310,6 +345,7 @@
                 color: $mako;
             }
             & .avatar {
+                display: block;
                 position: relative;
                 overflow: hidden;
                 width: 50px;
@@ -388,6 +424,11 @@
                 padding-left: 18px;
                 text-decoration: none;
                 color: #414252;
+                transition: .3s ease-out;
+
+                &:hover {
+                  color: $claret;
+                }
 
                 &::before {
                     position: absolute;
@@ -506,6 +547,7 @@
 
     & .reload {
         display: block;
+        width: 100%;
         text-decoration: none;
         font-family: $gpbl;
         @include font-size(11px)
@@ -528,8 +570,24 @@
             transform: translateY(50%) translateX(-71px) rotate(-40deg);
             fill: $claret;
             stroke: $claret;
+            transition: .3s;
+        }
+
+        &:hover {
+
+          & .reload-icon {
+            animation-name: reload-rotate;
+            animation-duration: .8s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+          }
         }
     }
+}
+
+@keyframes reload-rotate {
+  from { transform: translateY(50%) translateX(-71px) rotate(-40deg);}
+  to   { transform: translateY(50%) translateX(-71px) rotate(320deg);}
 }
 
 .request {
@@ -921,7 +979,7 @@
     color: $claret;
 }
 
-.icon-services.target:hover ~ .modal-caption {
+.services-item-optimization .target:hover ~ .modal-caption {
     transform: none;
     animation-name: show-caption;
     opacity: 1;
