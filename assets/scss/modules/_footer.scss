@@ -1,9 +1,11 @@
-/* === Footer module === */
+/**
+* Footer module
+*
+*/
 
 .footer {
     position: relative;
-    padding-top: 26px;
-    padding-bottom: 28px;
+    padding: 26px 0 28px 0;
     text-align: center;
     color: $mako;
 
@@ -27,21 +29,18 @@
     }
 
     &-title {
-        font-family: $gpbl;
-        @include font-size(11px)
-        line-height: 22px;
+        @include font(normal, 700, 11px, 22px, $gpbl);
         margin-bottom: 13px;
         text-transform: uppercase;
     }
 }
 
+
 .contacts {
     margin-bottom: 18px;
 
     & > .item {
-        font-family: $gp;
-        @include font-size(18px)
-        line-height: 30px;
+        @include font(normal, 400, 18px, 30px, $gp);
 
         &-email {
             text-decoration: none;
@@ -56,10 +55,10 @@
     }
 }
 
+
 .socials {
     width: 147px;
-    margin: 0 auto;
-    margin-bottom: 28px;
+    margin: 0 auto 28px;
     @include clearfix;
 
     & > .item {
@@ -115,15 +114,15 @@
     }
 }
 
+
 .copyright {
-    @include font-size(12px)
-    line-height: 16px;
+    @include font(normal, 400, 12px, 16px, inherit);
 
     & span {
-        font-family: $dpbo;
-        font-weight: 700;
+        @include font(normal, 700, 12px, 16px, $gpbo);
     }
 }
+
 
 @media all and (-ms-high-contrast:none), (-ms-high-contrast: active) {
 

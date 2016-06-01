@@ -1,4 +1,7 @@
-/* === Header module === */
+/**
+* Header module
+*
+*/
 
 .header {
     background: rgba(245, 245, 245, 1) url("../img/bg_header.jpg") no-repeat center top;
@@ -11,15 +14,14 @@
     }
 }
 
+
 .top-nav {
-    padding-top: 47px;
-    padding-left: 60px;
+    padding: 47px 0 0 60px;
     @include clearfix;
 
     & .logo {
         float: left;
-        margin-right: 471px;
-        margin-left: -2px;
+        margin: 0 471px 0 -2px;
 
         &-icon {
             width: 110px;
@@ -33,16 +35,11 @@
         float: right;
 
         & > .link {
-            font-family: $gpbl;
-            @include font-size(11px)
-            font-weight: 700;
-            line-height: 28px;
+            @include font(normal, 700, 11px, 28px, $gpbl);
             position: relative;
             display: block;
             margin: 6px -1px 0 0;
-            padding-top: 2px;
-            padding-right: 13px;
-            padding-left: 35px;
+            padding: 2px 13px 0 35px;
             text-decoration: none;
             color: $claret;
             border: 2px solid $iron;
@@ -71,12 +68,11 @@
     }
 }
 
+
 .main-nav {
-    @include font-size(12px)
-    font-weight: 400;
-    line-height: 30px;
+    @include font(normal, 400, 12px, 30px, inherit);
     float: left;
-    margin-top: 9px;
+    margin-top: 18px;
     text-transform: uppercase;
 
     & ul {
@@ -129,6 +125,7 @@
     }
 }
 
+
 .slider {
     position: relative;
     margin-bottom: 29px;
@@ -167,9 +164,7 @@
         margin-top: 56px;
 
         & h1 {
-            font-family: $dpbo;
-            @include font-size(30px)
-            line-height: 35px;
+            @include font(normal, 700, 30px, 35px, $gpbo);
             position: relative;
             margin-bottom: 55px;
             padding-right: 100px;
@@ -193,7 +188,7 @@
             color: #414252;
 
             & strong {
-                font-family: $dpbo;
+                font-family: $gpbo;
             }
 
             &:last-of-type {
@@ -210,14 +205,11 @@
 }
 
 .btn {
-    font-family: $gpbl;
-    @include font-size(11px)
-    font-weight: 700;
-    line-height: 30px;
+    @include font(normal, 700, 11px, 30px, $gpbl);
     position: relative;
     display: inline-block;
     width: 180px;
-    padding: 10px 0;
+    padding: 7px 0;
     cursor: pointer;
     text-align: center;
     vertical-align: top;
@@ -251,8 +243,8 @@
     }
 
     &:hover {
-      box-shadow: 0 10px 20px 5px rgba(0,0,0,.15);
-      border: 3px solid white;
+      box-shadow: 0 10px 20px 5px rgba(0, 0, 0, .15);
+      border: 3px solid #fff;
       background-color: #fff;
       color: $claret;
 
@@ -271,9 +263,9 @@
 
     }
     &:active {
-      border: 3px solid rgba(40,54,69,.1);
+      border: 3px solid rgba(40, 54, 69, .1);
       color: rgba(63, 65, 71, .8);
-      box-shadow: 0 10px 20px 0 rgba(0,0,0,.15);
+      box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .15);
 
       & .btn-header-arrow {
         stroke: rgba(63, 65, 71, .8);
@@ -299,8 +291,7 @@
 
     &-order {
         width: 130px;
-        padding-top: 9px;
-        padding-bottom: 7px;
+        padding: 3px 0 7px 0;
     }
 }
 

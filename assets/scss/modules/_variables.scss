@@ -1,16 +1,21 @@
-/* === Variables module === */
+/**
+* Variables module
+*
+*/
 
-$claret         : rgba(167, 12, 93, 1);
-$freshEggplant  : rgba(151, 0, 72, 1);
-$mako           : rgba(63, 65, 71, 1);
-$iron           : rgba(223, 223, 226, 1);
+$claret         : #a70c5d;
+$freshEggplant  : #970048;
+$mako           : #3f4147;
+$iron           : #dfdfe2;
 
 
 
 $gp 	:	"GothamPro", Arial, Helvetica, sans-serif;
 $gpm	:	"GothamPro-Medium", Arial, Helvetica, sans-serif;
 $gpbl	:	"GothamPro-Black", Arial, Helvetica, sans-serif;
-$dpbo	:	"GothamPro-Bold", Arial, Helvetica, sans-serif;
+$gpbo	:	"GothamPro-Bold", Arial, Helvetica, sans-serif;
+$babo   :   "BanderaPro-Bold", Arial, Helvetica, sans-serif;
+$pdf   :   "PFDinDisplayPro-Regular", Arial, Helvetica, sans-serif;
 
 
 
@@ -24,7 +29,10 @@ $dpbo	:	"GothamPro-Bold", Arial, Helvetica, sans-serif;
   font-size: calculateRem($size);
 }
 
-
+@mixin font($style, $wt, $size, $lh, $ff) {
+    font: $style $wt #{$size}/#{$lh} $ff;
+    font-size: calculateRem($size);
+}
 
 @mixin list {
     font-size: 0;
