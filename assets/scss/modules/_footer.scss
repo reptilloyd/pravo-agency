@@ -3,7 +3,7 @@
 *
 */
 
-.footer {
+#footer {
     position: relative;
     padding: 26px 0 28px 0;
     text-align: center;
@@ -163,7 +163,7 @@
   .services-04 { background: url('../img/sprite.png') no-repeat 0 -302px; width: 42px !important;}
   .services-04:hover { background: url('../img/sprite.png') no-repeat 0 -250px;  }
 
-  .main-nav .link::before {
+  .main-menu .link::before {
     content: "";
     position: absolute;
     left: 0;
@@ -176,7 +176,7 @@
     transition: 0 !important;
   }
 
-  .main-nav .link:hover::before {
+  .main-menu .link:hover::before {
     bottom: -5px;
     width: 100%;
     opacity: 1;
@@ -219,7 +219,7 @@
   *::-ms-backdrop, .services-04 { background: url('../img/sprite.png') no-repeat 0 -302px; width: 42px !important;}
   *::-ms-backdrop, .services-04:hover { background: url('../img/sprite.png') no-repeat 0 -250px;  }
 
-  *::-ms-backdrop, .main-nav .link::before {
+  *::-ms-backdrop, .main-menu .link::before {
     content: "";
     position: absolute;
     left: 0;
@@ -232,7 +232,7 @@
     transition: 0 !important;
   }
 
-  *::-ms-backdrop, .main-nav .link:hover::before {
+  *::-ms-backdrop, .main-menu .link:hover::before {
     bottom: -5px;
     width: 100%;
     opacity: 1;
