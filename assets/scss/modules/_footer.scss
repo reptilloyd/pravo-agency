@@ -22,13 +22,17 @@
     }
 
     & > .wrap {
-        width: 340px;
+        // width: 340px;
         max-width: 1240px;
         margin: 0 auto;
         padding-left: 4px;
+
+        @media #{$mobile} {
+            padding-left: 0;
+        }
     }
 
-    &-title {
+    & .footer-title {
         @include font(normal, 700, 11px, 22px, $gpbl);
         margin-bottom: 13px;
         text-transform: uppercase;
@@ -41,6 +45,10 @@
 
     & > .item {
         @include font(normal, 400, 18px, 30px, $gp);
+
+        @media #{$mobile} {
+            @include fsize(14px);
+        }
 
         &-email {
             text-decoration: none;
@@ -116,7 +124,7 @@
 
 
 .copyright {
-    @include font(normal, 400, 12px, 16px, inherit);
+    @include font(normal, 400, 12px, 16px, $gp);
 
     & span {
         @include font(normal, 700, 12px, 16px, $gpbo);
