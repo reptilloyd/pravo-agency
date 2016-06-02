@@ -219,10 +219,14 @@
             width: 90px;
             height: 90px;
             cursor: pointer;
-            transform: translateX(-45%);
+            transform: translateX(-45%) scale(1);
             border-radius: 50%;
             background-color: #fff;
-            transition: .7s ease;
+            transition: .3s ease-out;
+
+            &:hover {
+                transform: translateX(-45%) scale(1.2);
+            }
 
             @media #{$tablet} {
                 width: 60px;

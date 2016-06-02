@@ -161,7 +161,7 @@
   .turn-title-arrow { background: url('../img/sprite.png') no-repeat 0 -658px;  }
 
 
-  .icon-services { transition: 0 !important; }
+  .services-svg { transition: 0 !important; }
   .services-01 { background: url('../img/sprite.png') no-repeat 0 -607px;  }
   .services-01:hover { background: url('../img/sprite.png') no-repeat 0 -556px;  }
   .services-02 { background: url('../img/sprite.png') no-repeat 0 -505px; width: 42px !important; height: 42px !important;}
@@ -189,6 +189,8 @@
     width: 100%;
     opacity: 1;
   }
+
+  .request-content-left .field { padding: 4px 0 12px 0; }
   /* eof IE10 */
 
   /* IE11 */
@@ -217,7 +219,7 @@
   *::-ms-backdrop, .turn-title-arrow { background: url('../img/sprite.png') no-repeat 0 -658px;  }
 
 
-  *::-ms-backdrop, .icon-services { transition: 0 !important; }
+  *::-ms-backdrop, .services-svg { transition: 0 !important; }
   *::-ms-backdrop, .services-01 { background: url('../img/sprite.png') no-repeat 0 -607px;  }
   *::-ms-backdrop, .services-01:hover { background: url('../img/sprite.png') no-repeat 0 -556px;  }
   *::-ms-backdrop, .services-02 { background: url('../img/sprite.png') no-repeat 0 -505px; width: 42px !important; height: 42px !important;}
@@ -245,5 +247,13 @@
     width: 100%;
     opacity: 1;
   }
+
+  *::-ms-backdrop, .request-content-left .field { padding: 4px 0 12px 0; }
   /* eof IE11 */
 }
+
+/* targeting firefox */
+body:not(:-moz-handler-blocked) .services-item h3 {
+    @include font(normal, 700, 14px, 20px, $gpbo);
+  }
+/* eof targeting firefox only */

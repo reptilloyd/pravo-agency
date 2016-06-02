@@ -11,7 +11,6 @@
 	<!-- Place favicon.ico in the root directory -->
 
 	<link rel="stylesheet" href="css/style.css" />
-	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
 	</head>
 	<body class="home">
 	<!--[if lt IE 8]>
@@ -30,9 +29,9 @@
 
 				<div class="top-nav">
 					<div class="left">
-						<a class="logo  menu-item-home" href="/">
+						<a class="logo  menu-item-home" href="index.html">
 							<svg class="logo-icon">
-								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite.svg#logo_index"></use>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/logo_index.svg#general"></use>
 							</svg>
 						</a>
 					</div>
@@ -101,7 +100,7 @@
 							<div class="services-inner">
 								<h3 class="p-name">Наведение&nbsp;порядка в&nbsp;делах</h3>
 								<button class="icon-services">
-									<svg class="services-01">
+									<svg class="services-01  services-svg">
 										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite.svg#icon_services_01"></use>
 									</svg>
 								</button>
@@ -121,7 +120,7 @@
 							<div class="services-inner">
 								<h3 class="p-name">Оптимизация договорных&nbsp;отношений</h3>
 								<button class="icon-services  target" data-popup-open="modal">
-									<svg class="services-02">
+									<svg class="services-02  services-svg">
 										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite.svg#icon_services_02"></use>
 									</svg>
 								</button>
@@ -138,7 +137,7 @@
 							<div class="services-inner">
 								<h3 class="p-name">Правовое сопровождение деятельности (юрист-аутсорсер)</h3>
 								<button class="icon-services">
-									<svg class="services-03">
+									<svg class="services-03  services-svg">
 										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite.svg#icon_services_03"></use>
 									</svg>
 								</button>
@@ -156,7 +155,7 @@
 							<div class="services-inner">
 								<h3 class="p-name">Разработка договоров и&nbsp;другой&nbsp;документации</h3>
 								<button class="icon-services">
-									<svg class="services-04">
+									<svg class="services-04  services-svg">
 										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite.svg#icon_services_04"></use>
 									</svg>
 								</button>
@@ -251,7 +250,7 @@
 								<cite class="comment-author  reviewer">Алексей Фёдоров</cite>
 								<ul class="tags  tag">
 									<li><a class="link" href="#">CEO</a></li>
-									<li><a class="link  site" href="#">deco.agency</a></li>
+									<li><a class="link  site" href="http://deco.agency">deco.agency</a></li>
 								</ul>
 							</blockquote>
 						</article>
@@ -266,7 +265,7 @@
 								<cite class="comment-author  reviewer">Артур Оруджалиев</cite>
 								<ul class="tags	tag">
 									<li><a class="link" href="#">CEO</a></li>
-									<li><a class="link  site" href="#">AIN.ua</a></li>
+									<li><a class="link  site" href="http://ain.ua">AIN.ua</a></li>
 								</ul>
 							</blockquote>
 						</article>
@@ -283,7 +282,7 @@
 								<div class="comment-author  reviewer">Григорий Маленко</div>
 								<ul class="tags  tag">
 									<li><a class="link" href="#">CEO</a></li>
-									<li><a class="link  site" href="#">SERM.ua</a></li>
+									<li><a class="link  site" href="http://serm.ua">SERM.ua</a></li>
 								</ul>
 							</div>
 						</div>
@@ -316,10 +315,10 @@
 						<div class="request-content">
 
 							<div class="request-content-left">
-								<input id="nameInput" type="text" name="request-name" placeholder="Имя*" required />
-								<input id="telInput" type="tel" name="request-phone" placeholder="Телефон*" required />
-								<input id="emailInput" type="email" name="request-email" placeholder="e-mail*" required />
-								<input type="text" name="request-site" placeholder="Сайт" />
+								<input id="nameInput" class="field" type="text" name="request-name" placeholder="Имя*" required />
+								<input id="telInput" class="field" type="tel" name="request-phone" placeholder="Телефон*" required />
+								<input id="emailInput" class="field" type="email" name="request-email" placeholder="e-mail*" required />
+								<input class="field"  type="text" name="request-site" placeholder="Сайт" />
 
 								<section class="turn">
 									<h4 class="turn-title">Меня интересует
@@ -430,7 +429,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
-	<script src="js/all.min.js"></script>
+	<script src="js/min/all.min.js"></script>
 
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 	<script>

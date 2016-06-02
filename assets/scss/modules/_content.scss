@@ -4,7 +4,7 @@
 */
 
 .heading {
-    max-width: 580px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 2px 0 30px 4px;
     text-align: center;
@@ -185,68 +185,53 @@
         }
 
         & .icon-services {
-            &:hover ~ .info {
-                color: #fff;
-                background-color: $claret;
-            }
-        }
-
-        & .services-01,
-          .services-02,
-          .services-03,
-          .services-04 {
             position: absolute;
             top: 7px;
             width: 40px;
             height: 41px;
             cursor: pointer;
-            transition: .3s linear;
-            stroke: #a5a6ac;
-
-            &:hover {
-                stroke: $claret;
-            }
+            right: 80.8%;
 
             @media #{$mobile-tablet} {
                 right: 80.8%;
                 top: 0;
             }
-        }
 
-        & .services-01 {
-            right: 80.8%;
-        }
+            &:hover {
 
-        & .services-02 {
-            right: 77.8%;
+                & ~ .info {
+                    color: #fff;
+                    background-color: $claret;
+                }
 
-            @media #{$mobile-tablet} {
-                right: 80.8%;
+                & .services-svg {
+                    stroke: $claret;
+                }
+
             }
         }
 
-        & .services-03 {
-            right: 80.8%;
-        }
-
-        & .services-04 {
-            right: 77.8%;
-
-            @media #{$mobile-tablet} {
-                right: 80.8%;
-            }
+        & .services-svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 41px;
+            cursor: pointer;
+            transition: .3s linear;
+            stroke: #a5a6ac;
         }
 
         & .target {
 
-            & .services-02 {
+            & .services-svg {
               fill: #a5a6ac;
               stroke: none;
             }
 
             &:hover {
 
-                & .services-02 {
+                & .services-svg {
                   fill: $claret;
                   stroke: none;
                 }
@@ -255,7 +240,7 @@
 
         & h3 {
             @include font(normal, 700, 15px, 20px, $gpbo);
-            margin-bottom: 4px;
+            margin-bottom: 20px;
             padding-right: 60px;
             text-transform: uppercase;
             color: $mako;
@@ -362,6 +347,14 @@
 
         &-optimization {
 
+            & .icon-services {
+                    right: 77.8%;
+
+                    @media #{$mobile-tablet} {
+                        right: 80.8%;
+                    }
+            }
+
             & .services-inner {
                 padding-left: 27.6%;
 
@@ -393,6 +386,15 @@
         }
 
         &-trial {
+
+
+            & .icon-services {
+                right: 77.8%;
+
+                @media #{$mobile-tablet} {
+                    right: 80.8%;
+                }
+            }
 
             & .services-inner {
                 padding-left: 27.6%;
