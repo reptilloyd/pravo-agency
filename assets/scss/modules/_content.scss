@@ -454,7 +454,7 @@
 
     & .heading {
         margin-bottom: 46px;
-        padding-top: 33px;
+        padding-top: 4px;
     }
 
     &-content {
@@ -467,11 +467,11 @@
         float: left;
         max-width: 308px;
         width: 27.5%;
-        margin-right: 7.142%;
+        margin-right: 8.5%;
 
         &:last-child {
             max-width: 303px;
-            width: 30.6%;
+            width: 27.6%;
             margin-right: 0;
 
             @media #{$mobile} {
